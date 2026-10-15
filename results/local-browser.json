@@ -1,0 +1,171 @@
+{
+  "base": "http://localhost:3121",
+  "cases": [
+    {
+      "initialPath": "/zh-tw/report",
+      "measuredReportRequests": 0,
+      "switches": [
+        {
+          "phase": "round-1:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-1:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-2:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-2:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-3:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-3:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": []
+        }
+      ],
+      "requests": [
+        {
+          "phase": "initial-load",
+          "pathname": "/zh-tw/report",
+          "rsc": null,
+          "segment": null,
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": null
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": "1",
+          "segment": "/_tree",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": null
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/zh-tw/report",
+          "rsc": "1",
+          "segment": "/$d$locale/report/__PAGE__",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": null
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": "1",
+          "segment": "/$d$locale/report/__PAGE__",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": null
+        }
+      ]
+    },
+    {
+      "initialPath": "/report",
+      "measuredReportRequests": 0,
+      "switches": [
+        {
+          "phase": "round-1:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-1:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-2:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-2:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-3:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-3:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        }
+      ],
+      "requests": [
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": null,
+          "segment": null,
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": null
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": "1",
+          "segment": "/_tree",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": null
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/zh-tw/report",
+          "rsc": "1",
+          "segment": "/_tree",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": null
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": "1",
+          "segment": "/$d$locale/report/__PAGE__",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": null
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/zh-tw/report",
+          "rsc": "1",
+          "segment": "/$d$locale/report/__PAGE__",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": null
+        }
+      ]
+    }
+  ]
+}

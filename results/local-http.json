@@ -1,0 +1,89 @@
+{
+  "base": "http://localhost:3121",
+  "requests": [
+    {
+      "pathname": "/report",
+      "kind": "document",
+      "status": 200,
+      "initialSegmentSupport": true,
+      "vercelCache": null
+    },
+    {
+      "pathname": "/report",
+      "kind": "prefetch",
+      "requestedSegment": "/_tree",
+      "status": 200,
+      "matchedPath": null,
+      "segmentResponseMarker": "2",
+      "vercelCache": null,
+      "bytes": 374,
+      "rootKeys": [
+        "tree",
+        "staleTime",
+        "buildId"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/report",
+      "kind": "prefetch",
+      "requestedSegment": "/$d$locale/report/__PAGE__",
+      "status": 200,
+      "matchedPath": null,
+      "segmentResponseMarker": "2",
+      "vercelCache": null,
+      "bytes": 3258,
+      "rootKeys": [
+        "buildId",
+        "data",
+        "isUpgradeableISRFallback",
+        "a",
+        "rootVaryParams",
+        "needsRuntimeRequest"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "document",
+      "status": 200,
+      "initialSegmentSupport": true,
+      "vercelCache": null
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "prefetch",
+      "requestedSegment": "/_tree",
+      "status": 200,
+      "matchedPath": null,
+      "segmentResponseMarker": "2",
+      "vercelCache": null,
+      "bytes": 377,
+      "rootKeys": [
+        "tree",
+        "staleTime",
+        "buildId"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "prefetch",
+      "requestedSegment": "/$d$locale/report/__PAGE__",
+      "status": 200,
+      "matchedPath": null,
+      "segmentResponseMarker": "2",
+      "vercelCache": null,
+      "bytes": 3264,
+      "rootKeys": [
+        "buildId",
+        "data",
+        "isUpgradeableISRFallback",
+        "a",
+        "rootVaryParams",
+        "needsRuntimeRequest"
+      ],
+      "payloadShape": "segment"
+    }
+  ]
+}

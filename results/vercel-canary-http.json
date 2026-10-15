@@ -1,0 +1,107 @@
+{
+  "base": "https://nextjs-vercel-segment-cache-repro-me3b8vf5t-hmpthzs-projects.vercel.app",
+  "requests": [
+    {
+      "pathname": "/report",
+      "kind": "document",
+      "status": 200,
+      "initialSegmentSupport": true,
+      "vercelCache": "HIT"
+    },
+    {
+      "pathname": "/report",
+      "kind": "prefetch",
+      "requestedSegment": "/_tree",
+      "status": 200,
+      "matchedPath": "/en/report.segments/_tree.segment.rsc",
+      "segmentResponseMarker": "2",
+      "vercelCache": "HIT",
+      "bytes": 239,
+      "rootKeys": [
+        "b",
+        "t"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/report",
+      "kind": "prefetch",
+      "requestedSegment": "/$d$locale/report/__PAGE__",
+      "status": 200,
+      "matchedPath": "/en/report.segments/$d$locale/report/__PAGE__.segment.rsc",
+      "segmentResponseMarker": "2",
+      "vercelCache": "HIT",
+      "bytes": 3201,
+      "rootKeys": [
+        "t",
+        "a",
+        "u",
+        "b"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "document",
+      "status": 200,
+      "initialSegmentSupport": true,
+      "vercelCache": "HIT"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "prefetch",
+      "requestedSegment": "/_tree",
+      "status": 200,
+      "matchedPath": "/[locale]/report.rsc",
+      "segmentResponseMarker": null,
+      "vercelCache": "HIT",
+      "bytes": 3930,
+      "rootKeys": [
+        "P",
+        "c",
+        "q",
+        "i",
+        "t",
+        "m",
+        "G",
+        "S",
+        "r",
+        "s",
+        "a",
+        "l",
+        "p",
+        "d",
+        "b"
+      ],
+      "payloadShape": "unknown"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "prefetch",
+      "requestedSegment": "/$d$locale/report/__PAGE__",
+      "status": 200,
+      "matchedPath": "/[locale]/report.rsc",
+      "segmentResponseMarker": null,
+      "vercelCache": "HIT",
+      "bytes": 3930,
+      "rootKeys": [
+        "P",
+        "c",
+        "q",
+        "i",
+        "t",
+        "m",
+        "G",
+        "S",
+        "r",
+        "s",
+        "a",
+        "l",
+        "p",
+        "d",
+        "b"
+      ],
+      "payloadShape": "unknown"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "base": "https://nextjs-vercel-segment-cache-repro-rev288is5-hmpthzs-projects.vercel.app",
+  "requests": [
+    {
+      "pathname": "/report",
+      "kind": "document",
+      "status": 200,
+      "initialSegmentSupport": true,
+      "vercelCache": "HIT"
+    },
+    {
+      "pathname": "/report",
+      "kind": "prefetch",
+      "requestedSegment": "/_tree",
+      "status": 200,
+      "matchedPath": "/en/report.segments/_tree.segment.rsc",
+      "segmentResponseMarker": "2",
+      "vercelCache": "HIT",
+      "bytes": 374,
+      "rootKeys": [
+        "tree",
+        "staleTime",
+        "buildId"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/report",
+      "kind": "prefetch",
+      "requestedSegment": "/$d$locale/report/__PAGE__",
+      "status": 200,
+      "matchedPath": "/en/report.segments/$d$locale/report/__PAGE__.segment.rsc",
+      "segmentResponseMarker": "2",
+      "vercelCache": "HIT",
+      "bytes": 3328,
+      "rootKeys": [
+        "buildId",
+        "data",
+        "isUpgradeableISRFallback",
+        "a",
+        "rootVaryParams",
+        "needsRuntimeRequest"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "document",
+      "status": 200,
+      "initialSegmentSupport": true,
+      "vercelCache": "HIT"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "prefetch",
+      "requestedSegment": "/_tree",
+      "status": 200,
+      "matchedPath": "/zh-tw/report.segments/_tree.segment.rsc",
+      "segmentResponseMarker": "2",
+      "vercelCache": "HIT",
+      "bytes": 377,
+      "rootKeys": [
+        "tree",
+        "staleTime",
+        "buildId"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "prefetch",
+      "requestedSegment": "/$d$locale/report/__PAGE__",
+      "status": 200,
+      "matchedPath": "/zh-tw/report.segments/$d$locale/report/__PAGE__.segment.rsc",
+      "segmentResponseMarker": "2",
+      "vercelCache": "HIT",
+      "bytes": 3334,
+      "rootKeys": [
+        "buildId",
+        "data",
+        "isUpgradeableISRFallback",
+        "a",
+        "rootVaryParams",
+        "needsRuntimeRequest"
+      ],
+      "payloadShape": "segment"
+    }
+  ]
+}

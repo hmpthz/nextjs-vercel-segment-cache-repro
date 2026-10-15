@@ -9,6 +9,27 @@ A small reproduction for repeated RSC navigation requests when a page generated 
 - The page has two normal `next/link` links and a client component using `useSearchParams` inside `Suspense`.
 - No next-intl, data fetching, API, authentication, custom cache handler, or experimental cache configuration.
 
+## Verified deployments and results
+
+Verified on 2026-10-15 with Chrome 155.0.8059.40. Each browser case uses a fresh context, waits for automatic prefetches, and performs six clicks (three round trips).
+
+| Environment | Next.js | Start at `/zh-tw/report` | Start at `/report` |
+| --- | --- | --- | --- |
+| Local `next start` | 16.3.6 | 0 new report requests | 0 |
+| Vercel, English prerendered | 16.3.6 | 3 new report requests | 0 |
+| Vercel, English prerendered | 16.5.0-canary.12 | 3 new report requests | 0 |
+| Vercel, both locales prerendered | 16.3.6 | 0 new report requests | 0 |
+
+Public deployments (no login required):
+
+- [16.3.6 baseline: start at the on-demand route](https://nextjs-vercel-segment-cache-repro.vercel.app/zh-tw/report)
+- [16.5.0-canary.12 baseline](https://nextjs-vercel-segment-cache-repro-me3b8vf5t-hmpthzs-projects.vercel.app/zh-tw/report) — source: [`canary` branch](https://github.com/hmpthz/nextjs-vercel-segment-cache-repro/tree/canary)
+- [16.3.6 control: both locales prerendered](https://nextjs-vercel-segment-cache-repro-rev288is5-hmpthzs-projects.vercel.app/zh-tw/report)
+
+See [`results/summary.json`](results/summary.json), the raw HTTP and browser JSON in [`results/`](results/), and the captured [`next info`](results/next-info-stable.txt). Counts exclude initial-load prefetches. In both failing Vercel cases, every click returning to Traditional Chinese issues one additional RSC navigation request.
+
+The probe recognizes both the 16.3.6 and canary Flight payload formats. It also fails explicitly if the deployment returns an authentication page.
+
 ## Run locally
 
 ```sh

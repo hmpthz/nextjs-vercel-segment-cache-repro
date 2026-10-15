@@ -1,0 +1,19 @@
+Operating System:
+  Platform: darwin
+  Arch: arm64
+  Version: Darwin Kernel Version 25.6.0: Fri Jul 31 19:17:26 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6041
+  Available memory (MB): 24576
+  Available CPU cores: 12
+Binaries:
+  Node: 22.22.0
+  npm: 10.9.4
+  Yarn: 4.12.0
+  pnpm: N/A
+Relevant Packages:
+  next: 16.3.6 // There is a newer version (16.4.1) available, upgrade recommended! 
+  eslint-config-next: N/A
+  react: 19.2.6
+  react-dom: 19.2.6
+  typescript: N/A
+Next.js Config:
+  output: N/A

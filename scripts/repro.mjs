@@ -9,7 +9,7 @@ const browser = await chromium.launch({
     ? { executablePath: process.env.BROWSER_EXECUTABLE_PATH }
     : {}),
 });
-const result = { base: base.origin, cases: [] };
+const result = { base: base.origin, browserVersion: browser.version(), cases: [] };
 
 try {
   for (const initialPath of ['/zh-tw/report', '/report']) {
@@ -40,7 +40,10 @@ try {
     });
 
     await page.goto(new URL(initialPath, base).href);
-    await page.locator('nav').waitFor();
+    if (new URL(page.url()).origin !== base.origin) {
+      throw new Error(`Unexpected redirect to ${page.url()}; check deployment protection`);
+    }
+    await page.locator('[data-locale="en"]').waitFor();
     // Let automatic Link prefetches finish before the measured switches.
     await page.waitForTimeout(2500);
     const firstLocale = initialPath === '/report' ? 'en' : 'zh-tw';
