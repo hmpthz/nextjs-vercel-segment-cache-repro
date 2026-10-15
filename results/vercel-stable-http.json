@@ -1,0 +1,112 @@
+{
+  "base": "https://nextjs-vercel-segment-cache-repro.vercel.app",
+  "requests": [
+    {
+      "pathname": "/report",
+      "kind": "document",
+      "status": 200,
+      "initialSegmentSupport": true,
+      "vercelCache": "HIT"
+    },
+    {
+      "pathname": "/report",
+      "kind": "prefetch",
+      "requestedSegment": "/_tree",
+      "status": 200,
+      "matchedPath": "/en/report.segments/_tree.segment.rsc",
+      "segmentResponseMarker": "2",
+      "vercelCache": "HIT",
+      "bytes": 374,
+      "rootKeys": [
+        "tree",
+        "staleTime",
+        "buildId"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/report",
+      "kind": "prefetch",
+      "requestedSegment": "/$d$locale/report/__PAGE__",
+      "status": 200,
+      "matchedPath": "/en/report.segments/$d$locale/report/__PAGE__.segment.rsc",
+      "segmentResponseMarker": "2",
+      "vercelCache": "HIT",
+      "bytes": 3328,
+      "rootKeys": [
+        "buildId",
+        "data",
+        "isUpgradeableISRFallback",
+        "a",
+        "rootVaryParams",
+        "needsRuntimeRequest"
+      ],
+      "payloadShape": "segment"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "document",
+      "status": 200,
+      "initialSegmentSupport": true,
+      "vercelCache": "HIT"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "prefetch",
+      "requestedSegment": "/_tree",
+      "status": 200,
+      "matchedPath": "/[locale]/report.rsc",
+      "segmentResponseMarker": null,
+      "vercelCache": "HIT",
+      "bytes": 4066,
+      "rootKeys": [
+        "P",
+        "c",
+        "q",
+        "i",
+        "f",
+        "m",
+        "G",
+        "S",
+        "h",
+        "r",
+        "s",
+        "a",
+        "l",
+        "p",
+        "d",
+        "b"
+      ],
+      "payloadShape": "full-flight"
+    },
+    {
+      "pathname": "/zh-tw/report",
+      "kind": "prefetch",
+      "requestedSegment": "/$d$locale/report/__PAGE__",
+      "status": 200,
+      "matchedPath": "/[locale]/report.rsc",
+      "segmentResponseMarker": null,
+      "vercelCache": "HIT",
+      "bytes": 4066,
+      "rootKeys": [
+        "P",
+        "c",
+        "q",
+        "i",
+        "f",
+        "m",
+        "G",
+        "S",
+        "h",
+        "r",
+        "s",
+        "a",
+        "l",
+        "p",
+        "d",
+        "b"
+      ],
+      "payloadShape": "full-flight"
+    }
+  ]
+}

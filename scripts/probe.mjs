@@ -1,11 +1,14 @@
 const base = new URL(process.argv[2] ?? 'http://localhost:3000');
 const segments = ['/_tree', '/$d$locale/report/__PAGE__'];
-const evidence = { base: base.origin, nextVersion: '16.3.6', requests: [] };
+const evidence = { base: base.origin, requests: [] };
 
 for (const pathname of ['/report', '/zh-tw/report']) {
   const document = await fetch(new URL(pathname, base));
   if (!document.ok) throw new Error(`${pathname}: HTTP ${document.status}`);
   const html = await document.text();
+  if (!html.includes('Current locale:')) {
+    throw new Error(`${pathname}: response is not the reproduction page; check deployment protection`);
+  }
   evidence.requests.push({
     pathname,
     kind: 'document',
@@ -23,6 +26,10 @@ for (const pathname of ['/report', '/zh-tw/report']) {
       },
     });
     const body = await response.text();
+    const rootLine = body.split('\n').find((line) => line.startsWith('0:'));
+    let root = null;
+    try { root = JSON.parse(rootLine?.slice(2) ?? 'null'); } catch {}
+    const fullFlight = root && typeof root === 'object' && 'f' in root;
     evidence.requests.push({
       pathname,
       kind: 'prefetch',
@@ -32,7 +39,10 @@ for (const pathname of ['/report', '/zh-tw/report']) {
       segmentResponseMarker: response.headers.get('x-nextjs-postponed'),
       vercelCache: response.headers.get('x-vercel-cache'),
       bytes: Buffer.byteLength(body),
-      payloadShape: /"buildId":/.test(body) ? 'segment' : 'full-flight',
+      rootKeys: root && typeof root === 'object' ? Object.keys(root) : [],
+      payloadShape: fullFlight
+        ? 'full-flight'
+        : response.headers.get('x-nextjs-postponed') === '2' ? 'segment' : 'unknown',
     });
   }
 }

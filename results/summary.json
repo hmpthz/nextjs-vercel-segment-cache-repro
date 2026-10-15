@@ -1,0 +1,49 @@
+{
+  "checkedOn": "2026-10-15",
+  "repository": "https://github.com/hmpthz/nextjs-vercel-segment-cache-repro",
+  "reactVersion": "19.2.6",
+  "browserVersion": "155.0.8059.40",
+  "clicksPerInitialPath": 6,
+  "cases": [
+    {
+      "name": "local",
+      "nextVersion": "16.3.6",
+      "prerenderAllLocales": false,
+      "base": "http://localhost:3121",
+      "requestsByInitialPath": {
+        "/zh-tw/report": 0,
+        "/report": 0
+      }
+    },
+    {
+      "name": "vercel-stable",
+      "nextVersion": "16.3.6",
+      "prerenderAllLocales": false,
+      "base": "https://nextjs-vercel-segment-cache-repro.vercel.app",
+      "requestsByInitialPath": {
+        "/zh-tw/report": 3,
+        "/report": 0
+      }
+    },
+    {
+      "name": "vercel-canary",
+      "nextVersion": "16.5.0-canary.12",
+      "prerenderAllLocales": false,
+      "base": "https://nextjs-vercel-segment-cache-repro-me3b8vf5t-hmpthzs-projects.vercel.app",
+      "requestsByInitialPath": {
+        "/zh-tw/report": 3,
+        "/report": 0
+      }
+    },
+    {
+      "name": "vercel-prerender-all",
+      "nextVersion": "16.3.6",
+      "prerenderAllLocales": true,
+      "base": "https://nextjs-vercel-segment-cache-repro-rev288is5-hmpthzs-projects.vercel.app",
+      "requestsByInitialPath": {
+        "/zh-tw/report": 0,
+        "/report": 0
+      }
+    }
+  ]
+}

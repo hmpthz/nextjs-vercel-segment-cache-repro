@@ -1,0 +1,235 @@
+{
+  "base": "https://nextjs-vercel-segment-cache-repro-me3b8vf5t-hmpthzs-projects.vercel.app",
+  "browserVersion": "155.0.8059.40",
+  "cases": [
+    {
+      "initialPath": "/zh-tw/report",
+      "measuredReportRequests": 3,
+      "switches": [
+        {
+          "phase": "round-1:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-1:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": [
+            {
+              "phase": "round-1:switch-to-zh-tw",
+              "pathname": "/zh-tw/report",
+              "rsc": "1",
+              "segment": null,
+              "navigation": true,
+              "status": 200,
+              "segmentResponseMarker": null,
+              "matchedPath": "/[locale]/report.rsc"
+            }
+          ]
+        },
+        {
+          "phase": "round-2:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-2:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": [
+            {
+              "phase": "round-2:switch-to-zh-tw",
+              "pathname": "/zh-tw/report",
+              "rsc": "1",
+              "segment": null,
+              "navigation": true,
+              "status": 200,
+              "segmentResponseMarker": null,
+              "matchedPath": "/[locale]/report.rsc"
+            }
+          ]
+        },
+        {
+          "phase": "round-3:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-3:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": [
+            {
+              "phase": "round-3:switch-to-zh-tw",
+              "pathname": "/zh-tw/report",
+              "rsc": "1",
+              "segment": null,
+              "navigation": true,
+              "status": 200,
+              "segmentResponseMarker": null,
+              "matchedPath": "/[locale]/report.rsc"
+            }
+          ]
+        }
+      ],
+      "requests": [
+        {
+          "phase": "initial-load",
+          "pathname": "/zh-tw/report",
+          "rsc": null,
+          "segment": null,
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": "/[locale]/report"
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": "1",
+          "segment": "/_tree",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": "/en/report.segments/_tree.segment.rsc"
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/zh-tw/report",
+          "rsc": "1",
+          "segment": "/$d$locale/report/__PAGE__",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": "/[locale]/report.rsc"
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": "1",
+          "segment": "/$d$locale/report/__PAGE__",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": "/en/report.segments/$d$locale/report/__PAGE__.segment.rsc"
+        },
+        {
+          "phase": "round-1:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "rsc": "1",
+          "segment": null,
+          "navigation": true,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": "/[locale]/report.rsc"
+        },
+        {
+          "phase": "round-2:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "rsc": "1",
+          "segment": null,
+          "navigation": true,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": "/[locale]/report.rsc"
+        },
+        {
+          "phase": "round-3:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "rsc": "1",
+          "segment": null,
+          "navigation": true,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": "/[locale]/report.rsc"
+        }
+      ]
+    },
+    {
+      "initialPath": "/report",
+      "measuredReportRequests": 0,
+      "switches": [
+        {
+          "phase": "round-1:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-1:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-2:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-2:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-3:switch-to-zh-tw",
+          "pathname": "/zh-tw/report",
+          "newRequests": []
+        },
+        {
+          "phase": "round-3:switch-to-en",
+          "pathname": "/report",
+          "newRequests": []
+        }
+      ],
+      "requests": [
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": null,
+          "segment": null,
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": "/en/report"
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": "1",
+          "segment": "/_tree",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": "/en/report.segments/_tree.segment.rsc"
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/zh-tw/report",
+          "rsc": "1",
+          "segment": "/_tree",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": "/[locale]/report.rsc"
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/zh-tw/report",
+          "rsc": "1",
+          "segment": null,
+          "navigation": true,
+          "status": 200,
+          "segmentResponseMarker": null,
+          "matchedPath": "/[locale]/report.rsc"
+        },
+        {
+          "phase": "initial-load",
+          "pathname": "/report",
+          "rsc": "1",
+          "segment": "/$d$locale/report/__PAGE__",
+          "navigation": false,
+          "status": 200,
+          "segmentResponseMarker": "2",
+          "matchedPath": "/en/report.segments/$d$locale/report/__PAGE__.segment.rsc"
+        }
+      ]
+    }
+  ]
+}
