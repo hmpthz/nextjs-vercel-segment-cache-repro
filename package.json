@@ -1,0 +1,23 @@
+{
+  "name": "nextjs-vercel-segment-cache-repro",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "probe": "node scripts/probe.mjs",
+    "repro": "node scripts/repro.mjs"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "next": "16.3.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}
