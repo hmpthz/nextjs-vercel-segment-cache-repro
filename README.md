@@ -2,7 +2,7 @@
 
 A small reproduction for repeated RSC navigation requests when a page generated on first request is opened directly on Vercel.
 
-- Next.js **16.3.6**, React / React DOM **19.2.6**.
+- This `canary` branch pins Next.js **16.5.0-canary.12**, with React / React DOM **19.2.6**. The `main` branch pins Next.js **16.3.6**.
 - `/en/report` is generated at build time.
 - `/zh-tw/report` is generated and cached on its first request.
 - A small `proxy.js` rewrites `/report` to `/en/report`, keeping the default locale unprefixed.
