@@ -9,6 +9,8 @@ A small reproduction for repeated RSC navigation requests when a page generated 
 - The page has two normal `next/link` links and a client component using `useSearchParams` inside `Suspense`.
 - No next-intl, data fetching, API, authentication, custom cache handler, or experimental cache configuration.
 
+Issue and investigation: [#1](https://github.com/hmpthz/nextjs-vercel-segment-cache-repro/issues/1).
+
 ## Verified deployments and results
 
 Verified on 2026-10-15 with Chrome 155.0.8059.40. Each browser case uses a fresh context, waits for automatic prefetches, and performs six clicks (three round trips).
